@@ -1,2 +1,2 @@
 # Scrollytelling Feature
-This repo is for mu scrollytelling development
+This repo is for my scrollytelling development.
