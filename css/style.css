@@ -139,6 +139,7 @@ figure p {
   margin: 0 auto 2rem auto;
   color: #fff;
   background: transparent;
+  background-color: #2d2d69;
 }
 
 .step:last-child {
@@ -159,8 +160,20 @@ figure p {
 
 .step img {
   display: block;
-  width: 100%;
-  height: auto;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border: #000000 1px solid;
+}
+
+.fall-date {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em;
+  border: darkblue 2px;
+  border-radius: 5px;
+  margin: auto;
 }
 
 .step .description {
@@ -168,6 +181,7 @@ figure p {
   color: #000000;
   padding: 1em;
   font-size: 1em;
+  margin-top: 10px;
 }
 
 .step .description p {
@@ -180,7 +194,7 @@ figure p {
 
 /* mobile breakpoint */
 
-@media (max-width: 767.98px) {
+@media (max-width: 500px) {
 
   article {
     max-width: 25rem;
@@ -189,11 +203,16 @@ figure p {
 
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 400px) {
 
   article {
-    max-width: 100%;
     margin: 0 1em;
   }
 
+}
+.image-container {
+  position: relative;
+  width: 100%; /* Or the width of your choice */
+  max-width: 300px; /* Or the max-width of your choice */
+  overflow: hidden;
 }
