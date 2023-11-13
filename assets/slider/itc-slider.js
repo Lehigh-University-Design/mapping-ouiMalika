@@ -147,7 +147,7 @@ class ItcSlider {
       return {
         // Start autoplay
         start: () => {
-          this.#config.autoplay = true;
+          this.#config.autoplay = false;
           this.#autoplay();
         },
         // Stop autoplay
