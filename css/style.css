@@ -43,19 +43,34 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  background-image: url('back_image.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #cccccc;
 }
 
+
 #intro h1 {
-  font-family: 'Roboto Slab', serif;
   font-weight: 700;
   font-size: 4em;
   margin-top: 0;
+  color: aliceblue;
   margin-bottom: 0.25em;
 }
 
 #intro p {
+  color: lightgray;
   font-size: 1.25em;
+  border-bottom: 2px solid #fff;
+  margin-top: 20px;
+}
+
+#intro a {
+  padding-top: 1em;
+  color: lightgray;
+  border-bottom: 0cm;
 }
 
 @keyframes bounce {
@@ -79,6 +94,8 @@ a:hover {
   position: relative;
   background-color: #f3f3f3;
   /*padding: 1rem;*/
+  border: #2d2d69;
+  border-style: solid;
 }
 
 article {
@@ -136,10 +153,14 @@ figure p {
 }
 
 .step {
+  font-family: Poppins, sans-serif;
   margin: 0 auto 2rem auto;
   color: #fff;
   background: transparent;
-  background-color: #2d2d69;
+  border-radius: 30px;
+  border: 2px solid #FDF9F9;
+  background: linear-gradient(151deg, rgba(255, 252, 252, 0.40) 9.07%, rgba(255, 255, 255, 0.12) 92.51%);
+  backdrop-filter: blur(20px);
 }
 
 .step:last-child {
@@ -147,15 +168,18 @@ figure p {
 }
 
 .step.is-active h2 {
-  background-color: #000000;
   color: #ffffff;
 }
 
 .step h2 {
+  margin: 5px;
   padding: 1em;
   font-size: 1.25em;
   background-color: #fff;
-  color: #000000;
+  border-radius: 30px;
+  border: 2px solid #FDF9F9;
+  background: linear-gradient(151deg, rgba(255, 252, 252, 0.40) 9.07%, rgba(255, 255, 255, 0.12) 92.51%);
+  backdrop-filter: blur(20px);
 }
 
 .step img {
@@ -168,20 +192,34 @@ figure p {
 }
 
 .fall-date {
+  margin: 5px;
   font-size: 20px;
   font-weight: 500;
   padding: 0.5em;
-  border: darkblue 2px;
-  border-radius: 5px;
-  margin: auto;
+  border-radius: 20px;
+  border: 2px solid #FDF9F9;
+  background: linear-gradient(151deg, rgba(255, 252, 252, 0.40) 9.07%, rgba(255, 255, 255, 0.12) 92.51%);
+  backdrop-filter: blur(20px);
 }
 
 .step .description {
   background-color: #fff;
-  color: #000000;
+  color: rgb(47, 47, 47);
   padding: 1em;
-  font-size: 1em;
+  font-size: 0.8em;
   margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  border: 2px solid #FDF9F9;
+  background: linear-gradient(151deg, rgba(255, 252, 252, 0.40) 40.07%, rgba(255, 255, 255, 0.12) 92.51%);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 9; /* Change 3 to the number of lines you want to display */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.8em;
 }
 
 .step .description p {

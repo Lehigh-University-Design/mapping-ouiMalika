@@ -12,7 +12,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Poppins:wght@500&display=swap" rel="stylesheet">
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css' rel='stylesheet'/>
@@ -26,8 +27,11 @@
 
     <section id="intro">
         <div class="content">
-            <h1>Meteorites 2000-2013</h1>
-            <p>Scroll down to see the map</p>
+            <div class="head-container" style="display: block;">
+                <h1>History of meteorites 2000-2013 <img src = 'images/meteorite.png' style="width: 100px; height: auto;"></h1>
+            </div>
+            <a>by Malika Buribayeva, DES 396</a>
+            <p>Scroll down to learn more ↓</p>
         </div>
     </section>
 
@@ -132,7 +136,7 @@
                     'source': 'data',
                     'layout': {
                         'icon-image': 'meteorite-icon', // reference the image
-                        'icon-size': 0.01 // adjust the size as needed
+                        'icon-size': 0.015 // adjust the size as needed
                     }
                 });
             });
